@@ -18,3 +18,4 @@ RUN yum install -y net-tools
 #RUN yum install -y vim
 RUN yum install -y curl
 RUN yum install -y wget
+CMD ["/usr/sbin/init"]
