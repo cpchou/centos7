@@ -19,4 +19,5 @@ RUN yum install -y net-tools
 RUN yum install -y curl
 RUN yum install -y wget
 RUN yum -y update
-CMD ["/usr/sbin/init"]
+RUN yum -y install epel-release
+ENTRYPOINT ["/usr/sbin/init"]
